@@ -1,0 +1,9 @@
+#!/bin/sh
+
+export VERBOSE=n		# you can see the compile options
+export DEBUG=n			# compile with -g -DDEBUG
+export CHECK_DEPENDENCY=y	# make depedency file & check depenency
+export PATH=/opt/crosstool/bin:$PATH
+export _TMS_=y
+
+make $@
